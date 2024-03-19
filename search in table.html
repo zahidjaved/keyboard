@@ -1,0 +1,219 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <title>Search in table</title>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+
+    <style>
+        body {
+            background: linear-gradient(25deg, #7c5e86 50%, #cc33ff 50%);
+        }
+
+        .styled-table {
+            border-collapse: collapse;
+            margin: 25px 0;
+            font-size: 0.9em;
+            font-family: sans-serif;
+            width: 100%;
+            margin: 0 auto;
+            box-shadow: 0 0 20px rgba(0, 0, 0, 0.15);
+            margin-top: 18px;
+        }
+
+        .styled-table thead tr {
+            background-color: #009879;
+            color: #ffffff;
+            text-align: left;
+        }
+
+        .styled-table th,
+        .styled-table td {
+            padding: 12px 15px;
+        }
+
+        .styled-table tbody tr {
+            border-bottom: 1px solid #dddddd;
+        }
+
+        .styled-table tbody tr:nth-of-type(even) {
+            background-color: #f3f3f3b5;
+        }
+
+        .styled-table tbody tr {
+            font-weight: bold;
+            color: #15493cda;
+            text-transform: capitalize;
+        }
+
+        h1 {
+            font-size: 57px;
+            line-height: 56px;
+            color: white;
+        }
+
+        .box {
+            width: 502px;
+            height: 24px;
+            background-color: white;
+            border-radius: 25px;
+            background-color: white;
+
+            display: flex;
+            align-items: center;
+            padding: 20px;
+        }
+
+        .box>input {
+            flex: 1;
+            height: 40px;
+            border: none;
+            outline: none;
+            font-size: 18px;
+            padding-left: 10px;
+        }
+    </style>
+
+</head>
+
+<body>
+    <h1>Search in table</h1>
+    <div class="box">
+        <input id="query" type="text" placeholder="Search....">
+    </div>
+    <table class="styled-table">
+        <thead>
+            <tr>
+                <th>Name</th>
+                <th>Role</th>
+                <th>Department</th>
+                <th>Registration</th>
+            </tr>
+        </thead>
+        <tbody id="seachquery">
+            <tr>
+                <td>Dom</td>
+                <td>UX/UI</td>
+                <td>Designer</td>
+                <td>2/4/2023</td>
+            </tr>
+            <tr class="active-row">
+                <td>john</td>
+                <td>Front-End</td>
+                <td>Front-end</td>
+                <td>2/2/2023</td>
+            </tr>
+            <tr>
+                <td>Doe</td>
+                <td>Backe-end</td>
+                <td>Developer</td>
+                <td>4/8/2023</td>
+            </tr>
+            <tr class="active-row">
+                <td>Katt</td>
+                <td>Data-base</td>
+                <td>Data-base</td>
+                <td>28/6/2023</td>
+            </tr>
+
+            <tr>
+                <td>latin</td>
+                <td>Front-End</td>
+                <td>Front-end</td>
+                <td>20/20/2023</td>
+            </tr>
+            <tr class="active-row">
+                <td>nailer</td>
+                <td>Backe-end</td>
+                <td>Developer</td>
+                <td>19/3/2022</td>
+            </tr>
+            <tr>
+                <td>bill</td>
+                <td>UX/UI</td>
+                <td>Designer</td>
+                <td>25/9/2022</td>
+            </tr>
+
+
+            <tr class="active-row">
+                <td>nathin</td>
+                <td>Front-End</td>
+                <td>Front-end</td>
+                <td>19/11/2023</td>
+            </tr>
+            <tr>
+                <td>jason</td>
+                <td>Backe-end</td>
+                <td>Developer</td>
+                <td>90/08/2023</td>
+            </tr>
+            <tr class="active-row">
+                <td>kameon</td>
+                <td>Data-base</td>
+                <td>Data-base</td>
+                <td>01/09/2022</td>
+            </tr>
+
+            <tr>
+                <td>brith</td>
+                <td>Front-End</td>
+                <td>Front-end</td>
+                <td>04/07/2021</td>
+            </tr>
+            <tr class="active-row">
+                <td>jordan</td>
+                <td>Backe-end</td>
+                <td>Developer</td>
+                <td>08/01/2023</td>
+            </tr>
+            <tr>
+                <td>graman</td>
+                <td>UX/UI</td>
+                <td>Designer</td>
+                <td>01/03/2023</td>
+            </tr>
+
+            <tr>
+                <td>james</td>
+                <td>UX/UI</td>
+                <td>Designer</td>
+                <td>03/09/2022</td>
+            </tr>
+            <tr class="active-row">
+                <td>jack</td>
+                <td>Front-End</td>
+                <td>Front-end</td>
+                <td>01/07/2021</td>
+            </tr>
+            <tr>
+                <td>Michial</td>
+                <td>Backe-end</td>
+                <td>Developer</td>
+                <td>04/01/2022</td>
+            </tr>
+            <tr class="active-row">
+                <td>David</td>
+                <td>Data-base</td>
+                <td>Data-base</td>
+                <td>12/10/2022</td>
+            </tr>
+
+        </tbody>
+    </table>
+
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.4/jquery.min.js"></script>
+    <script>
+        $(document).ready(function () {
+            $("#query").on("keyup", function () {
+                var value = $(this).val().toLowerCase();
+                $("#seachquery tr").filter(function () {
+                    $(this).toggle($(this).text().toLowerCase().indexOf(value) > -1)
+                });
+            });
+        });
+    </script>
+</body>
+
+</html>

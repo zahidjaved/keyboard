@@ -1,0 +1,1498 @@
+* {
+  margin: 0;
+  padding: 0;
+  scroll-behavior: smooth;
+}
+
+body {
+  background: rgb(191, 199, 206);
+  font-family: Arial, Helvetica, sans-serif;
+}
+
+img {
+  width: 100%;
+}
+
+ul,
+ol,
+li,
+a,
+h1,
+h2,
+h3,
+h4,
+h5,
+h5,
+p,
+span {
+  margin: 0;
+  padding: 0;
+  list-style-type: none;
+  text-decoration: none;
+}
+
+
+.keyboard-outer {
+  background: rgb(191, 199, 206);
+  padding: 14px 183px;
+}
+
+.keyboard-bottom {
+  background: rgb(191, 199, 206);
+  padding: 17px 183px;
+}
+
+.switch {
+  background: rgba(243, 243, 243, 0.774);
+  width: 93px;
+  height: 50px;
+  text-align: end;
+  padding-right: 10px;
+  border-radius: 15px;
+  margin-top: 36px;
+}
+
+.switch img {
+  width: 27%;
+}
+
+.wifi {
+  background: rgba(243, 243, 243, 0.774);
+  width: 52px;
+  height: 52px;
+  text-align: center;
+  border-radius: 15px;
+  margin-top: 36px;
+}
+
+.wifi img {
+  width: 30%;
+}
+
+.speaker-load {
+  background-image: url(../images/lap-speaker.jpg);
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  width: 100%;
+  max-width: 1144px;
+  margin: 0 auto;
+  /* background: #00000047; */
+  height: 130px;
+}
+
+.dont {
+  background: rgba(243, 243, 243, 0.452);
+  width: 67px;
+  height: 13px;
+  text-align: center;
+  border-radius: 18px;
+}
+
+.left-buttons {
+  margin-left: 165px;
+}
+
+.figer {
+  background: rgb(83 78 78 / 95%);
+  width: 89px;
+  height: 13px;
+  border-radius: 3px;
+  margin-left: 54px;
+}
+
+.figer:hover {
+  background: rgb(83 78 78 / 95%);
+
+}
+
+.mousees {
+  width: 100%;
+  max-width: 425px;
+  margin-left: 98px;
+}
+
+.mouse-buttons {
+  background: rgba(243, 243, 243, 0.452);
+  width: 132px;
+  height: 45px;
+  border: 2px solid rgb(191, 199, 206);
+  border-radius: 3px;
+}
+
+.mouse-paid {
+  background: rgba(243, 243, 243, 0.452);
+  width: 100%;
+  max-width: 418px;
+  margin: 0 auto;
+  box-shadow: rgba(50, 50, 93, 0.25) 0px 30px 60px -12px inset, rgba(0, 0, 0, 0.3) 0px 18px 36px -18px inset;
+  padding: 105px 0px;
+  margin-top: -3px;
+  margin-bottom: 1px;
+  cursor: pointer;
+}
+
+.keyboard {
+  padding: 2px 0px 0px 190px;
+  box-shadow: rgba(50, 50, 93, 0.25) 0px 30px 60px -12px inset, rgba(0, 0, 0, 0.3) 0px 18px 36px -18px inset;
+  font-size: 20px;
+}
+
+.mian-row {
+  width: 100%;
+  height: 60px;
+}
+
+.row-one,
+.row-two,
+.row-three,
+.row-four,
+.row-five,
+.row-six {
+  margin: 10px 0 0 0;
+}
+
+.row-one button {
+  width: 65px;
+  height: 50px;
+}
+
+button {
+  width: 70px;
+  height: 70px;
+  background: rgba(245, 245, 220, 0.884);
+  box-shadow: 5px 5px 10px #00000036;
+  font-size: 20px;
+  margin-left: 6px;
+  outline: none;
+  border-radius: 12%;
+  color: #000;
+  border: none;
+  transition: 0.2s ease-in-out;
+  cursor: pointer;
+}
+
+button:hover {
+  background: rgb(191, 199, 206);
+}
+
+button:active {
+  box-shadow: 5px 5px 10px #00000062;
+}
+
+.esc {
+  width: 78px;
+  height: 58px;
+  text-align: center;
+  border-radius: 17px;
+}
+
+.backspace {
+  width: 149px;
+  border-radius: 18px;
+}
+
+.tab {
+  width: 100px;
+  border-radius: 17px;
+}
+
+.enter {
+  width: 121px;
+  border-radius: 17px
+}
+
+.caps {
+  width: 153px;
+  border-radius: 16px;
+}
+
+.shift {
+  width: 204px;
+  border-radius: 18px;
+}
+
+.space {
+  width: 415px;
+  border-radius: 10px;
+}
+
+.up {
+  width: 109px;
+  height: 31px;
+  border-radius: 10px;
+  display: block;
+  margin-bottom: 8px;
+}
+
+.down {
+  width: 109px;
+  height: 31px;
+  border-radius: 10px;
+  bottom: 317px;
+  right: 643px;
+}
+
+
+.group-btn {
+  display: flex;
+  position: absolute;
+  right: 406px;
+  bottom: 0;
+}
+
+.row-four {
+  position: relative;
+}
+
+.mouse {
+  position: absolute;
+  width: 32px;
+  height: 32px;
+  left: 32%;
+  top: 53px;
+  filter: grayscale(63%);
+  background: red;
+  border-radius: 50%;
+}
+
+.row-six {
+  position: relative;
+}
+
+.mobile-up {
+  display: none;
+}
+.g{
+  border-radius: 12% 12% 42% 12%;
+}
+.h{
+  border-radius: 12% 12% 12% 35%;
+}
+/* all media  */
+
+/* Extra large devices (large laptops and desktops, 1800px and up) */
+@media only screen and (max-width: 1800px) {
+  .group-btn {
+    display: flex;
+    position: absolute;
+    right: 300px;
+    bottom: 0;
+  }
+
+  .mousees {
+    margin-left: 118px;
+  }
+
+  .mouse {
+    position: absolute;
+    width: 29px;
+    height: 29px;
+    left: 34.9%;
+    top: 56px;
+    filter: grayscale(63%);
+}
+
+
+}
+
+/* Extra large devices (large laptops and desktops, 1680px and up) */
+@media only screen and (max-width: 1680px) {
+  .group-btn {
+    display: flex;
+    position: absolute;
+    right: 231px;
+    bottom: 0;
+  }
+
+  .mouse {
+    left: 36.3%;
+    top: 57px;
+}
+
+  .mousees {
+    margin-left: 91px;
+  }
+
+  .left-buttons {
+    margin-left: 128px;
+  }
+
+  .keyboard {
+    padding: 2px 0px 0px 138px;
+  }
+
+  .switch {
+    margin-top: 36px;
+    margin-left: -47px;
+  }
+
+  .wifi-left {
+    margin-left: 27px;
+  }
+}
+
+/* Extra large devices (large laptops and desktops, 1600px and up) */
+@media only screen and (max-width: 1600px) {
+  .keyboard-outer {
+    padding: 14px 173px;
+}
+  .group-btn {
+    right: 166px;
+    bottom: 0;
+  }
+
+  .keyboard {
+    padding: 2px 0px 0px 124px;
+  }
+
+  .mouse {
+    position: absolute;
+    width: 28px;
+    height: 28px;
+    left: 38%;
+    top: 57px;
+    filter: grayscale(63%);
+  }
+
+  .wifi-left {
+    margin-left: 67px;
+  }
+
+  .figer {
+    margin-left: 122px;
+  }
+}
+
+/* Extra large devices (large laptops and desktops, 1500px and up) */
+@media only screen and (max-width: 1500px) {
+  .keyboard-outer {
+    padding: 14px 123px;
+}
+  .keyboard {
+    padding: 2px 0px 0px 91px;
+  }
+
+  button {
+    font-size: 19px;
+  }
+
+  .mouse {
+    position: absolute;
+    width: 29px;
+    height: 27px;
+    left: 40%;
+    top: 58px;
+    filter: grayscale(63%);
+  }
+
+  .wifi-left {
+    margin-left: 50px;
+  }
+
+  .group-btn {
+    right: 98px;
+    bottom: 0;
+  }
+
+  .mousees {
+    margin-left: 68px;
+  }
+
+  .switch {
+    margin-top: 36px;
+    margin-left: -28px;
+}
+}
+
+/* Extra large devices (large laptops and desktops, 1440px and up) */
+@media only screen and (max-width: 1440px) {
+  .keyboard-outer {
+    background: rgb(191, 199, 206);
+    padding: 14px 74px;
+}
+  .keyboard {
+    padding: 2px 0px 0px 31px;
+  }
+
+  .wifi-left {
+    margin-left: 40px;
+  }
+
+  .mousees {
+    margin-left: 20px;
+  }
+
+  .left-buttons {
+    margin-left: 50px;
+  }
+}
+
+/* Extra large devices (large laptops and desktops, 1366px and up) */
+@media only screen and (max-width: 1366px) {
+  .keyboard-outer {
+    padding: 14px 45px;
+}
+  .group-btn {
+    right: 26px;
+    bottom: 0;
+  }
+
+  .mouse {
+    position: absolute;
+    width: 29px;
+    height: 29px;
+    left: 42%;
+    top: 57px;
+    filter: grayscale(63%);
+  }
+
+  .wifi-left {
+    margin-left: 28px;
+  }
+
+  .speaker-load {
+    height: 120px;
+  }
+
+  .mousees {
+    margin-left: 29px;
+  }
+}
+
+/* Extra large devices (large laptops and desktops, 1280px and up) */
+@media only screen and (max-width: 1280px) {
+  .keyboard-outer {
+    padding: 14px 33px;
+}
+  .keyboard {
+    padding: 2px 0px 0px 3px;
+  }
+
+  .wifi-left {
+    margin-left: 13px;
+  }
+
+  .row-one button {
+    width: 63px;
+    height: 49px;
+  }
+
+  button {
+    width: 68px;
+    height: 67px;
+    font-size: 20px;
+    margin-left: 6px;
+    border-radius: 22%;
+  }
+
+  .backspace {
+    width: 143px;
+    border-radius: 15px;
+  }
+
+  .tab {
+    width: 88px;
+    border-radius: 17px;
+  }
+
+  .caps {
+    width: 140px;
+    border-radius: 15px;
+  }
+
+  .shift {
+    width: 199px;
+    border-radius: 17px;
+  }
+
+  .space {
+    width: 403px;
+    border-radius: 10px;
+  }
+
+  .group-btn {
+    right: 7px;
+    bottom: -2px;
+  }
+
+  .mousees {
+    margin-left: -6px;
+  }
+
+  .mouse {
+    position: absolute;
+    width: 28px;
+    height: 28px;
+    left: 42.2%;
+    top: 55px;
+    filter: grayscale(63%);
+  }
+
+  .mouse-paid {
+    padding: 98px 0px;
+  }
+}
+
+/* Extra large devices (large laptops and desktops, 1200px and up) */
+@media only screen and (max-width: 1200px) {
+  .keyboard {
+    padding: 2px 0px 0px 22px;
+  }
+
+  .wifi-left {
+    margin-left: 2px;
+  }
+
+  .switch {
+    margin-top: 36px;
+    margin-left: -17px;
+    height: 48px;
+}
+
+  .switch img {
+    width: 21%;
+  }
+
+  .row-one button {
+    width: 58px;
+    height: 48px;
+  }
+
+  .group-btn {
+    right: 24px;
+    bottom: -5px;
+  }
+
+  button {
+    width: 65px;
+    height: 59px;
+    font-size: 17px;
+    margin-left: 4px;
+    border-radius: 20%;
+  }
+
+  .backspace {
+    width: 94px;
+    border-radius: 12px;
+  }
+
+  .tab {
+    width: 67px;
+    border-radius: 14px;
+  }
+
+  .enter {
+    width: 94px;
+    border-radius: 12px;
+  }
+
+  .caps {
+    width: 97px;
+    border-radius: 13px;
+  }
+
+  .shift {
+    width: 170px;
+    border-radius: 15px;
+  }
+
+  .space {
+    width: 359px;
+    border-radius: 10px;
+  }
+
+  .down {
+    width: 102px;
+    height: 29px;
+  }
+
+  .up {
+    width: 102px;
+    height: 29px;
+    border-radius: 10px;
+    display: block;
+    margin-bottom: 7px;
+  }
+
+  .mouse {
+    width: 25px;
+    height: 24px;
+    left: 39.9%;
+    top: 47px;
+}
+
+  .mousees {
+    margin-left: -3px;
+    max-width: 363px;
+  }
+
+  .left-buttons {
+    margin-left: 18px;
+  }
+
+  .mouse-buttons {
+    background: rgba(243, 243, 243, 0.452);
+    width: 114px;
+    height: 45px;
+    border: 2px solid rgb(191, 199, 206);
+    border-radius: 3px;
+  }
+}
+
+/* Extra large devices (large laptops and desktops, 1152px and up) */
+@media only screen and (max-width: 1152px) {
+  .keyboard-outer {
+    padding: 14px 24px;
+}
+  .keyboard {
+    padding: 2px 0px 0px 0px;
+  }
+
+  .group-btn {
+    display: flex;
+    position: absolute;
+    right: 6px;
+    bottom: -7px;
+  }
+
+  button {
+    width: 64px;
+    height: 59px;
+    font-size: 17px;
+    margin-left: 4px;
+
+  }
+
+  .backspace {
+    width: 108px;
+    border-radius: 12px;
+  }
+
+  .tab {
+    width: 77px;
+    border-radius: 14px;
+  }
+
+  .caps {
+    width: 106px;
+    border-radius: 13px;
+  }
+
+  .shift {
+    width: 164px;
+    border-radius: 10px;
+  }
+
+  .space {
+    width: 351px;
+    border-radius: 8px;
+  }
+
+  .mousees {
+    margin-left: -14px;
+    max-width: 363px;
+  }
+
+  .mouse {
+    width: 26px;
+    height: 26px;
+    left: 41%;
+    top: 49px;
+    filter: grayscale(63%);
+  }
+
+  .wifi-left {
+    margin-left: -6px;
+  }
+
+  .speaker-load {
+    height: 112px;
+  }
+}
+
+/* Large devices (laptops/desktops, 1114px and up) */
+@media only screen and (max-width: 1114px) {
+  .row-one button {
+    width: 56px;
+    height: 38px;
+  }
+
+  .wifi-left {
+    margin-left: -10px;
+  }
+
+  button {
+    width: 61px;
+    height: 54px;
+    font-size: 15px;
+    margin-left: 2px;
+    border-radius: 19%;
+  }
+
+  .keyboard {
+    padding: 2px 0px 0px 13px;
+  }
+
+  .backspace {
+    width: 112px;
+    border-radius: 11px;
+  }
+
+  .enter {
+    width: 101px;
+    border-radius: 11px;
+  }
+
+  .tab {
+    width: 70px;
+    border-radius: 12px;
+  }
+
+  .caps {
+    width: 109px;
+    border-radius: 12px;
+  }
+
+  .shift {
+    width: 167px;
+    border-radius: 13px;
+  }
+
+  .group-btn {
+    right: 22px;
+    bottom: -2px;
+  }
+
+  .mouse-buttons {
+    width: 111px;
+  }
+
+  .up {
+    width: 93px;
+    height: 25px;
+    border-radius: 9px;
+    margin-bottom: 6px;
+  }
+
+  .down {
+    width: 93px;
+    height: 25px;
+  }
+
+  .space {
+    width: 345px;
+    border-radius: 10px;
+  }
+
+  .mouse {
+    width: 25px;
+    height: 25px;
+    left: 40.9%;
+    top: 44px;
+}
+}
+
+/* Large devices (laptops/desktops, 1024px and up) */
+@media only screen and (max-width: 1024px) {
+  .speaker-load {
+    margin-left: -13px;
+  }
+
+  .wifi-left {
+    margin-left: -25px;
+  }
+
+  .row-one button {
+    width: 52px;
+    height: 36px;
+  }
+
+  .keyboard {
+    padding: 2px 0px 0px 4px;
+  }
+
+  .group-btn {
+    right: 6px;
+    bottom: -4px;
+  }
+
+  .esc {
+    border-radius: 11px;
+  }
+
+  button {
+    width: 57px;
+    height: 52px;
+    font-size: 15px;
+    margin-left: 2px;
+    border-radius: 20%;
+  }
+
+  .backspace {
+    width: 101px;
+    border-radius: 10px;
+  }
+
+  .enter {
+    width: 94px;
+    border-radius: 9px;
+  }
+
+  .tab {
+    width: 64px;
+    border-radius: 11px;
+  }
+
+  .caps {
+    width: 101px;
+    border-radius: 11px;
+  }
+
+  .shift {
+    width: 156px;
+    border-radius: 12px;
+  }
+
+
+  .space {
+    width: 321px;
+    border-radius: 11px;
+  }
+
+  .mouse {
+    width: 25px;
+    height: 25px;
+    left: 41.2%;
+    top: 42px;
+}
+
+  .mouse-buttons {
+    width: 96px;
+  }
+
+  .left-buttons {
+    margin-left: -4px;
+  }
+
+  .keyboard-outer {
+    padding: 14px 38px;
+}
+.switch {
+  margin-top: 36px;
+  margin-left: -37px;
+  height: 46px;
+  width: 88px;
+}
+}
+
+/* Large devices (laptops/desktops, 992px and up) */
+@media only screen and (max-width: 992px) {
+  .row-one button {
+    width: 49px;
+    height: 34px;
+  }
+
+  .mouse-buttons {
+    width: 91px;
+  }
+
+  .mousees {
+    margin-left: -24px;
+    max-width: 363px;
+  }
+
+  .left-buttons {
+    margin-left: -28px;
+  }
+
+  .figer {
+    margin-left: 149px;
+    width: 86px;
+  }
+
+  button {
+    width: 53px;
+    height: 51px;
+    font-size: 14px;
+    margin-left: 2px;
+    border-radius: 22%;
+  }
+
+  .backspace {
+    width: 106px;
+    border-radius: 10px;
+  }
+
+  .caps {
+    width: 105px;
+    border-radius: 11px;
+  }
+
+  .shift {
+    width: 154px;
+    border-radius: 12px;
+  }
+
+  .up {
+    width: 85px;
+    height: 23px;
+    border-radius: 8px;
+    margin-bottom: 4px;
+  }
+
+  .down {
+    width: 85px;
+    height: 23px;
+  }
+
+  .group-btn {
+    right: 24px;
+    bottom: 0px;
+  }
+
+  .space {
+    width: 311px;
+    border-radius: 11px;
+  }
+  .mouse {
+    width: 25px;
+    height: 25px;
+    left: 41%;
+    top: 39px;
+}
+}
+
+/* Medium devices (landscape tablets, 884px and up) */
+@media only screen and (max-width: 884px) {
+  .keyboard {
+    padding: 114px 0px 0px 2px;
+  }
+
+  .row-one button {
+    width: 45px;
+    height: 33px;
+  }
+
+  button {
+    width: 49px;
+    height: 49px;
+    font-size: 13px;
+    margin-left: 1px;
+    border-radius: 21%;
+  }
+
+  .backspace {
+    width: 90px;
+    border-radius: 9px;
+  }
+
+  .tab {
+    width: 56px;
+    border-radius: 10px;
+  }
+
+  .enter {
+    width: 83px;
+    border-radius: 9px;
+  }
+
+  .caps {
+    width: 89px;
+    border-radius: 10px;
+  }
+
+  .shift {
+    width: 136px;
+    border-radius: 11px;
+  }
+
+  .up {
+    width: 79px;
+    height: 21px;
+    border-radius: 8px;
+    margin-bottom: 4px;
+  }
+
+  .down {
+    width: 79px;
+    height: 21px;
+  }
+
+  .group-btn {
+    right: 7px;
+    bottom: 0px;
+  }
+
+  .space {
+    width: 278px;
+    border-radius: 10px;
+  }
+}
+
+/* Medium devices (landscape tablets, 834px and up) */
+@media only screen and (max-width: 834px) {
+  .row-one button {
+    width: 42px;
+    height: 33px;
+  }
+
+  button {
+    width: 47px;
+    height: 46px;
+    font-size: 12px;
+    margin-left: 1px;
+    border-radius: 20%;
+  }
+
+  .backspace {
+    width: 67px;
+    border-radius: 6px;
+  }
+
+  .tab {
+    width: 44px;
+    border-radius: 7px;
+  }
+
+  .enter {
+    width: 71px;
+    border-radius: 6px;
+  }
+
+  .caps {
+    width: 67px;
+    border-radius: 7px;
+  }
+
+  .shift {
+    width: 122px;
+    border-radius: 8px;
+  }
+
+  .group-btn {
+    right: 7px;
+    bottom: -2px;
+  }
+
+  .space {
+    width: 255px;
+    border-radius: 8px;
+  }
+  .mouse {
+    width: 25px;
+    height: 25px;
+    left: 39.7%;
+    top: 35px;
+}
+}
+
+/* Medium devices (landscape tablets, 800px and up) */
+@media only screen and (max-width: 800px) {
+  .mouse{
+    display: none;
+  }
+.keyboard-row{
+  padding-right: 0px;
+  padding-left: 0px;
+}
+
+  .row-one button {
+    width: 41px;
+    height: 33px;
+  }
+
+  button {
+    width: 45px;
+    height: 43px;
+    font-size: 12px;
+    margin-left: 1px;
+    border-radius: 22%;
+  }
+
+  .backspace {
+    width: 79px;
+    border-radius: 11px;
+  }
+
+  .enter {
+    width: 77px;
+    border-radius: 8px;
+  }
+
+  .tab {
+    width: 47px;
+    border-radius: 10px;
+  }
+
+  .caps {
+    width: 79px;
+    border-radius: 10px;
+  }
+
+  .shift {
+    width: 127px;
+    border-radius: 10px;
+  }
+
+  .up {
+    width: 71px;
+    height: 20px;
+    border-radius: 8px;
+    margin-bottom: 4px;
+  }
+
+  .down {
+    width: 71px;
+    height: 20px;
+  }
+
+  .group-btn {
+    right: 12px;
+    bottom: -4px;
+}
+
+  .space {
+    width: 262px;
+    border-radius: 10px;
+  }
+}
+
+/* Medium devices (landscape tablets, 768px and up) */
+@media only screen and (max-width: 768px) {
+  .keyboard {
+    padding: 114px 0px 0px 7px;
+}
+  .row-one button {
+    width: 39px;
+    height: 32px;
+  }
+
+  button {
+    width: 42px;
+    height: 41px;
+    font-size: 11px;
+    margin-left: 1px;
+    border-radius: 21%;
+  }
+
+  .backspace {
+    width: 86px;
+    border-radius: 10px;
+  }
+
+  .enter {
+    width: 81px;
+    border-radius: 9px;
+  }
+
+  .caps {
+    width: 86px;
+    border-radius: 9px;
+  }
+
+  .group-btn {
+    right: 11px;
+    bottom: -8px;
+}
+
+  .space {
+    width: 250px;
+    border-radius: 9px;
+  }
+}
+
+/* Medium devices (landscape tablets, 640px and up) */
+@media only screen and (max-width: 640px) {
+  .row-one button {
+    width: 31px;
+    height: 28px;
+  }
+
+  .esc {
+    border-radius: 7px;
+  }
+
+  button {
+    width: 33px;
+    height: 34px;
+    font-size: 11px;
+    margin-left: 1px;
+    border-radius: 20%;
+  }
+
+  .backspace {
+    width: 76px;
+    border-radius: 7px;
+  }
+
+  .tab {
+    width: 36px;
+    border-radius: 7px;
+  }
+
+  .enter {
+    width: 73px;
+    border-radius: 8px;
+  }
+
+  .caps {
+    width: 76px;
+    border-radius: 7px;
+  }
+
+  .shift {
+    width: 111px;
+    border-radius: 8px;
+  }
+
+  .up {
+    width: 56px;
+    height: 16px;
+    border-radius: 8px;
+    margin-bottom: 3px;
+  }
+
+  .down {
+    width: 56px;
+    height: 16px;
+    border-radius: 8px;
+  }
+
+  .group-btn {
+    right: 19px;
+    bottom: -9px;
+}
+
+  .space {
+    width: 211px;
+    border-radius: 8px;
+  }
+}
+
+/* Medium devices (landscape tablets, and large phones 600px and up) */
+@media only screen and (max-width: 600px) {
+
+  .keyboard {
+    padding: 111px 0px 0px 72px;
+    box-shadow: none;
+  }
+
+  .row-one,
+  .row-two,
+  .tab,
+  .brace,
+  .enter,
+  .caps,
+  .shift,
+  .group-btn {
+    display: none;
+  }
+
+  .mobile-up {
+    display: initial
+  }
+
+  .row-four {
+    margin-left: 22px;
+  }
+
+  .row-five {
+    margin-left: 24px;
+  }
+
+  .row-six {
+    margin-left: 52px;
+  }
+
+  button {
+    width: 39px;
+    height: 38px;
+    font-size: 12px;
+    margin-left: 2px;
+    border-radius: 20%;
+  }
+
+  .world img {
+    width: 38%;
+  }
+}
+
+/* Small devices (portrait tablets and large phones, 540px and up) */
+@media only screen and (max-width: 540px) {
+  .keyboard {
+    padding: 111px 0px 0px 48px;
+  }
+}
+
+/*  small Mobile devices( small Mobile devices, 480px and up) */
+@media only screen and (max-width: 480px) {
+  .keyboard {
+    padding: 109px 0px 0px 15px;
+  }
+
+  .space {
+    width: 186px;
+    border-radius: 8px;
+  }
+
+  .row-six {
+    margin-left: 55px;
+  }
+}
+
+/*  small Mobile devices( small Mobile devices, 425px and up) */
+@media only screen and (max-width: 428px) {
+  .keyboard {
+    padding: 109px 0px 0px 8px;
+  }
+
+  button {
+    width: 35px;
+    height: 37px;
+    font-size: 12px;
+    margin-left: 2px;
+    border-radius: 20%;
+  }
+
+  .row-six {
+    margin-left: 48px;
+  }
+
+  .space {
+    width: 173px;
+    border-radius: 7px;
+  }
+}
+
+/*  small Mobile devices( small Mobile devices, 414px and up) */
+@media only screen and (max-width: 414px) {
+  .keyboard {
+    padding: 109px 0px 0px 2px;
+  }
+}
+
+/*  small Mobile devices( small Mobile devices, 412px and up) */
+@media only screen and (max-width: 412px) {
+  button {
+    width: 34px;
+    height: 37px;
+    font-size: 11px;
+    margin-left: 2px;
+    border-radius: 20%;
+  }
+}
+
+/* extra small Mobile devices( extra small Mobile devices, 393px and up) */
+@media only screen and (max-width: 393px) {
+  button {
+    width: 33px;
+    height: 37px;
+    font-size: 11px;
+    margin-left: 2px;
+    border-radius: 20%;
+  }
+
+  .keyboard {
+    padding: 109px 0px 0px 1px;
+  }
+}
+
+/* extra small Mobile devices( extra small Mobile devices, 390px and up) */
+@media only screen and (max-width: 390px) {
+  button {
+    width: 31px;
+    height: 34px;
+    font-size: 10px;
+    margin-left: 2px;
+    border-radius: 19%;
+  }
+
+  .row-six {
+    margin-left: 19px;
+  }
+
+  .keyboard {
+    padding: 109px 0px 0px 9px;
+  }
+}
+
+/* extra small Mobile devices( extra small Mobile devices, 375px and up) */
+@media only screen and (max-width: 375px) {
+  .keyboard {
+    padding: 109px 0px 0px 2px;
+  }
+
+  .row-six {
+    margin-left: 32px;
+  }
+}
+
+/* extra small Mobile devices( extra small Mobile devices, 360px and up) */
+@media only screen and (max-width: 360px) {
+  .keyboard {
+    padding: 109px 0px 0px 5px;
+  }
+
+  .row-one,
+  .row-two,
+  .row-three,
+  .row-four,
+  .row-five,
+  .row-six {
+    margin: 8px 0 0 0;
+  }
+
+  button {
+    width: 31px;
+    height: 34px;
+    font-size: 10px;
+    margin-left: 0px;
+    border-radius: 19%;
+  }
+
+  .row-four {
+    margin-left: 16px;
+  }
+
+  .row-five {
+    margin-left: 17px;
+  }
+
+  .row-six {
+    margin-left: 32px;
+  }
+
+  .space {
+    width: 172px;
+    border-radius: 7px;
+  }
+}
+
+/*  extra small Mobile devices( extra small Mobile devices, 320px and up) */
+@media only screen and (max-width: 320px) {
+  .keyboard {
+    padding: 108px 0px 0px 4px;
+  }
+  .keyboard-row {
+    padding-right: 0px;
+    padding-left: 0px;
+    margin-left: 20px;
+}
+  button {
+    width: 27px;
+    height: 31px;
+    font-size: 9px;
+    margin-left: 0px;
+    border-radius: 17%;
+  }
+
+  .space {
+    width: 140px;
+    border-radius: 4px;
+  }
+
+  .row-six {
+    margin-left: 31px;
+  }
+}
